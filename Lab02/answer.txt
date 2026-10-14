@@ -1,0 +1,8 @@
+LAB 02 - PROBLEM MODELING AND ENCAPSULATION
+
+8. Constructor Overloading
+Q1: If you create a constructor method to build a DVD by title then create a constructor method to build a DVD by category. Does JAVA allow you to do this?
+Không. Java không cho phép khai báo đồng thời hai constructor DigitalVideoDisc(String title) và DigitalVideoDisc(String category) trong cùng một class.
+Nguyên nhân là Java phân biệt các constructor dựa trên số lượng, kiểu dữ liệu và thứ tự các tham số, chứ không dựa trên tên tham số. Trong trường hợp này, cả hai constructor đều nhận duy nhất một tham số kiểu String, nên chúng có cùng chữ ký (signature), dẫn đến lỗi khai báo trùng constructor.
+Để thực hiện constructor overloading, cần thay đổi số lượng, kiểu dữ liệu hoặc thứ tự kiểu dữ liệu của các tham số.
+
